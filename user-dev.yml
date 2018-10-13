@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: user
+  rabbitmq:
+    host: 192.168.10.62
+    username: told
+    password: 111111
+    port: 5672
+management:
+  security:
+    enabled: false
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
